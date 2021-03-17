@@ -6,9 +6,7 @@ import {
   Toolbar,
   Typography,
   Button,
-  IconButton
 } from '@material-ui/core'
-import MenuIcon from '@material-ui/icons/Menu'
 import { NavLink } from 'react-router-dom'
 import { LOGIN_ROUTE } from '../utils/consts'
 import { Context } from '../index'
@@ -16,9 +14,6 @@ import { Context } from '../index'
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
-  },
-  menuButton: {
-    marginRight: theme.spacing(2)
   },
   button: {
     color: '#fff'
@@ -38,13 +33,6 @@ const Navbar = () => {
     <div className={classes.root}>
       <AppBar position='static'>
         <Toolbar>
-          <IconButton
-            edge='start'
-            className={classes.menuButton}
-            color='inherit'
-            aria-label='menu'>
-            <MenuIcon />
-          </IconButton>
           <Typography variant='h6' className={classes.title}>
             Real-Time Chat
           </Typography>
@@ -55,7 +43,9 @@ const Navbar = () => {
             </Button>
           ) : (
             <NavLink to={LOGIN_ROUTE}>
-              <Button className={classes.button} color='inherit'>Login</Button>
+              <Button className={classes.button} color='inherit'>
+                Login
+              </Button>
             </NavLink>
           )}
         </Toolbar>

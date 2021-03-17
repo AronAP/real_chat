@@ -28,7 +28,7 @@ const Login = () => {
 
   const login = async () => {
     const provider = new firebase.auth.GoogleAuthProvider()
-    const {user} = await auth.signInWithPopup(provider)
+    const { user } = await auth.signInWithPopup(provider)
     console.log(user)
   }
 
@@ -44,7 +44,7 @@ const Login = () => {
           <Typography variant='h5' className={classes.title}>
             Start chatting
           </Typography>
-          <Button onClick={login} variant='contained' color='text.secondary'>
+          <Button onClick={login} variant='contained'>
             Login with Your Google Account
           </Button>
         </Box>
