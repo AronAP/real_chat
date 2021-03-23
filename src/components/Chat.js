@@ -116,9 +116,6 @@ const Chat = () => {
               />
             </Box>
           </Grid>
-          {/* <Button variant='contained' onClick={sendMessage}>
-            Send
-          </Button> */}
           <Button
             variant='contained'
             color='primary'

@@ -5,11 +5,6 @@ import LoaderImg from '../assets/loader.svg'
 const useStyles = makeStyles({
   grid: {
     height: window.innerHeight - 64
-  },
-  title: {
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginBottom: 20
   }
 })
 
